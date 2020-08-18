@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f75105201e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="MY.css">
+
+    <title>Page2</title>
+
+<body>
+
+   
+
+    <div class="center">
+    <div class="card" style="width: 30rem;">
+                <div class="card-body">
+          <h5 class="card-title center">Candidate Profile</h5>
+          <hr>
+          <p class="card-text" >Welcome <span id="result"></span></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"  >Address :- <span id="result2"></span></li>
+          <li class="list-group-item" >Email :- <span id="result3"></span></li>
+          <li class="list-group-item" >Phone No :- <span id="result4"></span></li>
+          <li class="list-group-item" >Hobbies :- <span id="result5"></span></li>
+          <li class="list-group-item" > <span id="result6"></span></li>
+          <li class="list-group-item" > <span id="result7">  </span></li>
+          <li class="list-group-item" >Photo Url :- <span id="result8"></span></li>
+                    
+        </ul>
+       
+      </div>
+    </div>
+    <!-- <form>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">Candidate Profile</div>
+                <div class="card-body">
+                    Welcome ..... <span id="result"></span> ! <br>
+                    Your address is <span id="result2"></span> ! <br>
+                    Email id is <span id="result3"></span> !<br>
+                    Phone No. is <span id="result4"></span> !<br>
+                    Hobbies is <span id="result5"></span> !<br>
+                    Education level is <span id="result6"></span> !<br>
+                    Education year is <span id="result7"></span> !<br>
+                    Education grade is <span id="result8"></span> !<br>
+                    Skill is <span id="result9"></span> !<br>
+                    Skill rating is <span id="result10"></span> !<br>
+                    Photo Url is <span id="result11"></span> !
+                    
+                </div>
+            </div>
+        </div>
+    </form> -->
+    <script >
+        document.getElementById("result").innerHTML = localStorage.getItem("Name");
+        document.getElementById("result2").innerHTML = localStorage.getItem("Address");
+        document.getElementById("result3").innerHTML = localStorage.getItem("Email");
+        document.getElementById("result4").innerHTML = localStorage.getItem("Phone No.");
+        document.getElementById("result5").innerHTML = localStorage.getItem("Hobbies");
+        document.getElementById("result6").innerHTML = "Studied :- "+localStorage.getItem("Level")+" In Year "+localStorage.getItem("Year")+" With Grade "+ localStorage.getItem("Grade")+"";
+        document.getElementById("result7").innerHTML = "You got :- "+localStorage.getItem("Skills")+" In your skills With Rating "+ localStorage.getItem("Rating")+"";
+        document.getElementById("result8").innerHTML = localStorage.getItem("Photo");
+
+    </script>
+</body>
+
+</head>
+
+</html>
