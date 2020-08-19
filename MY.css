@@ -29,4 +29,7 @@
     color: snow;
 }
 
+#alert-danger{
+    display: none;
+}
 
