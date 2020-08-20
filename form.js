@@ -7,7 +7,7 @@
         function SubmitForm() {
             //Username Validations
             var status = true;
-            var correct_way = /^[A-za-z]+$/;
+            var correct_way = /^[A-za-z .]+$/;
             var name = document.getElementById("name").value;
 
             if (name=="") {
